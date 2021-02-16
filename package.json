@@ -1,0 +1,15 @@
+{
+  "name": "test-azure-functions",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "start:local": "NODE_ENV=development && node src/local.js",
+    "start:factory": "NODE_ENV=development && node src/factory.js",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/service-bus": "^7.0.3"
+  },
+  "devDependencies": {}
+}
