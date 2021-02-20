@@ -20,10 +20,6 @@ async function main() {
   console.log(`Listen messages:${subscriptionName}`);
   console.log('Received messages:');
   
-  // const errorHandler = (error) => {
-  //   console.log(error);
-  // };
-
   try {
     const subscription = receiver.subscribe({
       // After executing this callback you provide, the receiver will remove the message from the queue if you
@@ -64,16 +60,7 @@ async function main() {
         }
       }
     });
-
-    // Waiting long enough before closing the receiver to receive messages
-    // console.log(`Receiving messages for 20 seconds before exiting...`);
-    // await delay(20000);
-
-    // console.log(`Closing...`);
-    // await receiver.close();
-  } finally {
-    // await sbClient.close();
-  }
+  } finally {}
 }
 
 main().catch((err) => {
